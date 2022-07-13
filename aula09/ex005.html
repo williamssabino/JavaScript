@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM</title>
+</head>
+<body>
+    <h1>Estudos de DOM</h1>
+    <p>estou aprendem <strong>DOM </strong> em javascript</p>
+    <p>teste Dom</p>
+    <div id="msg">clique aki</div>
+    <script>
+        var not = window.document.getElementById('msg')
+        not.style.backgroundColor = 'cyan'
+        var n = window.document.getElementsByTagName('p')[0]
+        document.write(n.innerHTML)
+    </script>
+</body>
+</html>
