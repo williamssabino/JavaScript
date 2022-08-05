@@ -19,28 +19,28 @@
     </style>
 </head>
 <body>
-    <div id="area" >
+    <div id="area" > 
         interaja...
     </div>
 
     <script>
-        var are = document.getElementById("area")
-        are.addEventListener('click',clicar)
+        var are = document.getElementById("area")/*cria uma variavel para pegar o valor da div*/
+        are.addEventListener('click',clicar)/*define o que vai fazer e qual funçao vai usar */
         are.addEventListener('mouseenter', entrar)
         are.addEventListener('mouseout', sair)
         
-        function clicar(){
+        function clicar(){ // função clicar
             
             are.innerText = "clicou!"
             are.style.backgroundColor = "red"
 
         }function entrar(){
-            are.innerText = "Entrou"
+            are.innerText = "Entrou"//escreve dentro da div
         }
 
         function sair(){
             are.innerText = "saiu"
-            are.style.backgroundColor = "green"
+            are.style.backgroundColor = "green"// configura a cor de fundo div
         }
 
 

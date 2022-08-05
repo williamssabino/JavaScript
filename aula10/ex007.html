@@ -8,17 +8,17 @@
 </head>
 <body>
     
-    <input type="number" name="txt1" id="txt1">
+     <input type="number" name="txt1" id="txt1"> <!--cria uma caixa de texto que so aceita valores numerico -->
     <input type="number" name="txt2" id="txt2">
-    <input type="button" value="Somar" onclick="somar()">
+   <input type="button" value="Somar" onclick="somar()">   <!-- cria um botao para efeutar a soma do dois valores digitados atraves da função somar apos o clique no botao -->
     <div id="res">Resultado</div>
     <script>
         function somar(){
-            var tn1 = Number.parseInt( window.document.querySelector('input#txt1'))
+            var tn1 = Number.parseInt( window.document.querySelector('input#txt1'))//transforma o valor de string para interio
             var tn2 = Number.parseInt( window.document.querySelector('input#txt2'))
-            var rsp = window.document.getElementById('res')
-            var s = tn1 + tn2
-            rsp.innerHTML = s
+            var rsp = window.document.getElementById('res')//variavel para obter os vlores da div
+            var s = tn1 + tn2 //variavel para gaurdar o valor da soma
+            rsp.innerHTML = s //escreve dentro da div
        }
     </script>
 </body>
