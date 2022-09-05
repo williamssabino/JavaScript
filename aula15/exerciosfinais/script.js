@@ -18,11 +18,11 @@ function adic(){
             list.push(n1) // caso o n1 n esteja dentro da lista,o adciona dentro dentro dela
             let add = window.document.createElement('option')//cria um elemento option
             add.text = `O valor ${n1} foi adcionado`//adiciona em formato de texto dentro do option
-            set.appendChild(add)//adciona dentro de select 
+            set.appendChild(add)//adciona o valor dentro de select 
             
         }   
         else{
-            window.alert('[ERRO] esse valor ja foi adicionado!')//caso ja tenh ao valor retona um erro
+            window.alert('[ERRO] esse valor ja foi adicionado!')//caso ja tenha o valor retona um erro
         
         }
     }
@@ -48,6 +48,7 @@ function finalizar(){
         for(let c=0;c<list.length;c++){
             s+=list[c]// soma cada valor na lista em determinada posição
             media = s/list.length// tira a media valores dentro da lista
+            
             if (c==0){
                 maior = list[c]
                 menor = list[c]
